@@ -2,34 +2,39 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: linear-gradient(90deg, #4CAF50, #FFC107);
+    background: linear-gradient(45deg, #FFD700, #FF1493); /* Mainiet gradienta krāsas pēc vēlamās paletes */
     filter: saturate(120%) brightness(95%);
-}
-
-form {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-attachment: fixed; /* Pievienojiet fiksu fonu */
+  }
+  
+  form {
+    border: none;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.8);
-}
+    width: 80%; /* Mainiet platību pēc vēlamā izmēra */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Pievienojiet ēnojumu */
+    background-color: rgba(255, 255, 255, 0.5); /* Caurspīdīgs stikla efekts */
+    border-radius: 10px; /* Noapaļoti stūri */
+    margin: auto; /* Centrējiet formu */
+    backdrop-filter: blur(10px); /* Pievienojiet vēl vairāk caurspīdīguma efektu */
+  }
 
-label {
+  label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-}
+    color: #fff; /* Mainiet etiķetes krāsu */
+  }
 
-input[type="number"],
-select {
+  input[type="number"],
+  select {
     width: calc(100% - 16px);
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-input[type="submit"] {
+  }
+  
+  input[type="submit"] {
     width: 100%;
     padding: 12px;
     background-color: #4CAF50;
@@ -38,30 +43,23 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
+  
 
-input[type="submit"]:hover {
+  input[type="submit"]:hover {
     background-color: #45a049;
-}
-
-#result {
+  }
+  
+  #result {
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
+  }
+  
+  h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
-}
-
-/* CSS ieraksti, lai atbalstītu dažādas pārlūkprogrammas un to versijas */
-input[type="number"],
-select {
-    -webkit-text-size-adjust: 100%; /* Atbalsts Chrome 54+, Edge 79+ */
-    text-size-adjust: 100%; /* Atbalsts Chrome 54+, Edge 79+ */
-}
-
-/* Citas CSS pielāgojumu iespējas citām pārlūkprogrammām un to versijām */
+    color: #fff; /* Mainiet virsraksta krāsu */
+  }
